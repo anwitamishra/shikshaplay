@@ -178,13 +178,13 @@ function loadQuestion() {
 
     const question = currentQuiz.questions[currentQuestionIndex];
     if (!question) return;
-    
+
     // Update question text
     const questionTextElement = document.getElementById('questionText');
     if (questionTextElement) {
-        questionTextElement.textContent = question.text;
+        questionTextElement.textContent = question.question;
     }
-    
+
     // Update answer options
     const options = ['option0', 'option1', 'option2'];
     options.forEach((optionId, index) => {
@@ -194,25 +194,25 @@ function loadQuestion() {
             if (optionText) {
                 optionText.textContent = question.options[index];
             }
-            
+
             // Reset option state
             optionElement.classList.remove('selected', 'correct', 'incorrect');
             optionElement.disabled = false;
         }
     });
-    
+
     // Reset UI state
     selectedAnswer = null;
     hideQuizButtons();
     showQuizButton('submitBtn');
     hideFeedback();
-    
+
     // Animate question appearance
     const questionCard = document.querySelector('.question-card');
     if (questionCard) {
         animateElement(questionCard, 'animate__fadeIn');
     }
-    
+
     // Update encouragement message
     updateEncouragementMessage();
 
@@ -239,47 +239,47 @@ function submitAnswer() {
 
     // NEW: Stop the timer as soon as a valid answer is submitted
     clearInterval(timerInterval);
-    
+
     const question = currentQuiz.questions[currentQuestionIndex];
-    const isCorrect = selectedAnswer === question.correctAnswer;
-    
+    const isCorrect = selectedAnswer === question.answer;
+
     // Record answer
     quizProgressManager.answerQuestion(currentQuestionIndex, selectedAnswer, isCorrect);
-    
+
     // Update UI to show correct/incorrect
     const options = ['option0', 'option1', 'option2'];
     options.forEach((optionId, index) => {
         const optionElement = document.getElementById(optionId);
         if (optionElement) {
             optionElement.disabled = true;
-            
-            if (index === question.correctAnswer) {
+
+            if (index === question.answer) {
                 optionElement.classList.add('correct');
             } else if (index === selectedAnswer && !isCorrect) {
                 optionElement.classList.add('incorrect');
             }
         }
     });
-    
+
     // Show feedback
     showFeedback(isCorrect, question.explanation);
-    
+
     // Play sound
     playSound(isCorrect ? 'correct' : 'incorrect');
-    
+
     // Update header (this resets the progress bar to show overall progress)
     updateQuizHeader();
-    
+
     // Hide submit button, show next/finish button
     hideQuizButton('submitBtn');
-    
+
     if (currentQuestionIndex < currentQuiz.questions.length - 1) {
         showQuizButton('nextBtn');
     } else {
         showQuizButton('finishBtn');
     }
-    
-    console.log('Answer submitted:', { selected: selectedAnswer, correct: question.correctAnswer, isCorrect });
+
+    console.log('Answer submitted:', { selected: selectedAnswer, correct: question.answer, isCorrect });
 }
 
 // Show feedback for the answer
