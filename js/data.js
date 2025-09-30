@@ -6,78 +6,116 @@ const mockQuizzes = {
         beginner: {
             id: "math-basic",
             subject: "Mathematics",
-            level: "beginner",
+            level: "class6",
+            pointsPerQuestion: 10,
+                questions: [
+                    {
+                        question: "What is the value of 7 + 5?",
+                        options: ["10", "12", "13"],
+                        answer: 1
+                    },
+                    {
+                        question: "Which is the largest two-digit number?",
+                        options: ["99", "98", "100"],
+                        answer: 0
+                    },
+                    {
+                        question: "What is the perimeter of a square with side 8 cm?",
+                        options: ["16 cm", "32 cm", "24 cm"],
+                        answer: 1
+                    },
+                    {
+                        question: "Which of these is a prime number?",
+                        options: ["4", "9", "7"],
+                        answer: 2
+                    },
+                    {
+                        question: "What is 15 divided by 3?",
+                        options: ["5", "3", "6"],
+                        answer: 0
+                    },
+                    {
+                        question: "The Roman numeral for 10 is:",
+                        options: ["X", "V", "L"],
+                        answer: 0
+                    },
+                    {
+                        question: "Which shape has 3 sides?",
+                        options: ["Square", "Triangle", "Rectangle"],
+                        answer: 1
+                    },
+                    {
+                        question: "What is the next even number after 8?",
+                        options: ["9", "10", "12"],
+                        answer: 1
+                    },
+                    {
+                        question: "What is the product of 6 × 6?",
+                        options: ["36", "12", "18"],
+                        answer: 0
+                    },
+                    {
+                        question: "Which is the smallest natural number?",
+                        options: ["0", "1", "2"],
+                        answer: 1
+                    }
+                ]
+        },
+        class7: {
+            id: "math-class7",
+            subject: "Mathematics",
+            level: "class7",
             pointsPerQuestion: 10,
             questions: [
                 {
-                    id: "math_q1",
-                    text: "What is 5 + 3?",
-                    options: ["6", "8", "10"],
-                    correctAnswer: 1,
-                    explanation: "5 plus 3 equals 8. Count on your fingers: 5... 6, 7, 8!"
+                    question: "The smallest prime number is:",
+                    options: ["1", "2", "3"],
+                    answer: 1
                 },
                 {
-                    id: "math_q2",
-                    text: "Which number comes after 12?",
-                    options: ["11", "13", "14"],
-                    correctAnswer: 1,
-                    explanation: "Numbers go in order: 11, 12, 13, 14... So 13 comes after 12!"
+                    question: "Value of 7² is:",
+                    options: ["14", "49", "77"],
+                    answer: 1
                 },
                 {
-                    id: "math_q3",
-                    text: "What is 10 - 4?",
-                    options: ["5", "6", "7"],
-                    correctAnswer: 1,
-                    explanation: "Start with 10 and count backwards 4 times: 9, 8, 7, 6. The answer is 6!"
+                    question: "The perimeter of a square of side 12 cm is:",
+                    options: ["24 cm", "36 cm", "48 cm"],
+                    answer: 2
                 },
                 {
-                    id: "math_q4",
-                    text: "How many sides does a triangle have?",
-                    options: ["2", "3", "4"],
-                    correctAnswer: 1,
-                    explanation: "A triangle has 3 sides. Tri means three, just like a tricycle has 3 wheels!"
+                    question: "Simplify: 5 + (–3) =",
+                    options: ["2", "–2", "8"],
+                    answer: 0
                 },
                 {
-                    id: "math_q5",
-                    text: "What is 2 × 3?",
-                    options: ["5", "6", "7"],
-                    correctAnswer: 1,
-                    explanation: "2 × 3 means 2 groups of 3: 3 + 3 = 6. Great job!"
+                    question: "Area of a triangle =",
+                    options: ["½ × base × height", "base × height", "2 × base × height"],
+                    answer: 0
                 },
                 {
-                    id: "math_q6",
-                    text: "Which is bigger: 15 or 12?",
-                    options: ["15", "12", "They are equal"],
-                    correctAnswer: 0,
-                    explanation: "15 is bigger than 12. When counting, 15 comes after 12!"
+                    question: "1/2 + 1/3 = ?",
+                    options: ["2/5", "5/6", "1/6"],
+                    answer: 1
                 },
                 {
-                    id: "math_q7",
-                    text: "What is half of 8?",
-                    options: ["3", "4", "5"],
-                    correctAnswer: 1,
-                    explanation: "Half means divide by 2. 8 ÷ 2 = 4. Think of sharing 8 candies equally between 2 friends!"
+                    question: "Cube of 4 is:",
+                    options: ["12", "64", "16"],
+                    answer: 1
                 },
                 {
-                    id: "math_q8",
-                    text: "How many minutes are in one hour?",
-                    options: ["50", "60", "70"],
-                    correctAnswer: 1,
-                    explanation: "There are 60 minutes in one hour. Remember: 60 seconds = 1 minute, 60 minutes = 1 hour!"
+                    question: "The mean of 5, 10, 15 is:",
+                    options: ["15", "10", "20"],
+                    answer: 1
                 },
                 {
-                    id: "math_q9",
-                    text: "What is 9 + 7?",
-                    options: ["15", "16", "17"],
-                    correctAnswer: 1,
-                    explanation: "9 + 7 = 16. You can think of it as 9 + 1 + 6 = 10 + 6 = 16!"
+                    question: "The multiplicative inverse of 5 is:",
+                    options: ["1/5", "–5", "5"],
+                    answer: 0
                 },
                 {
-                    id: "math_q10",
-                    text: "Which shape has 4 equal sides?",
-                    options: ["Rectangle", "Square", "Circle"],
-                    correctAnswer: 1,
-                    explanation: "A square has 4 equal sides. All sides are the same length!"
+                    question: "Which of these is a quadrilateral?",
+                    options: ["Triangle", "Square", "Circle"],
+                    answer: 1
                 }
             ]
         }
@@ -86,78 +124,116 @@ const mockQuizzes = {
         beginner: {
             id: "science-basic",
             subject: "Science",
-            level: "beginner",
+            level: "class6",
+            pointsPerQuestion: 10,
+                questions: [
+                    {
+                        question: "Which part of the plant makes food?",
+                        options: ["Root", "Leaf", "Stem"],
+                        answer: 1
+                    },
+                    {
+                        question: "Water boils at ___ degrees Celsius.",
+                        options: ["100", "0", "50"],
+                        answer: 0
+                    },
+                    {
+                        question: "Which organ pumps blood in the human body?",
+                        options: ["Liver", "Heart", "Lungs"],
+                        answer: 1
+                    },
+                    {
+                        question: "The process of plants making food is called:",
+                        options: ["Respiration", "Photosynthesis", "Transpiration"],
+                        answer: 1
+                    },
+                    {
+                        question: "Which is a source of energy?",
+                        options: ["Sun", "Moon", "Stars"],
+                        answer: 0
+                    },
+                    {
+                        question: "Animals that eat only plants are called:",
+                        options: ["Carnivores", "Herbivores", "Omnivores"],
+                        answer: 1
+                    },
+                    {
+                        question: "Which gas do humans need to breathe?",
+                        options: ["Oxygen", "Carbon dioxide", "Nitrogen"],
+                        answer: 0
+                    },
+                    {
+                        question: "The largest organ in the human body is:",
+                        options: ["Skin", "Heart", "Liver"],
+                        answer: 0
+                    },
+                    {
+                        question: "Which planet is known as the Red Planet?",
+                        options: ["Earth", "Mars", "Jupiter"],
+                        answer: 1
+                    },
+                    {
+                        question: "What do bees collect from flowers?",
+                        options: ["Honey", "Nectar", "Pollen"],
+                        answer: 1
+                    }
+                ]
+        },
+        class7: {
+            id: "science-class7",
+            subject: "Science",
+            level: "class7",
             pointsPerQuestion: 10,
             questions: [
                 {
-                    id: "sci_q1",
-                    text: "What do plants need to grow?",
-                    options: ["Only water", "Sunlight and water", "Only soil"],
-                    correctAnswer: 1,
-                    explanation: "Plants need sunlight, water, and nutrients from soil to grow healthy and strong!"
+                    question: "The SI unit of force is:",
+                    options: ["Joule", "Newton", "Watt"],
+                    answer: 1
                 },
                 {
-                    id: "sci_q2",
-                    text: "How many legs does a spider have?",
-                    options: ["6", "8", "10"],
-                    correctAnswer: 1,
-                    explanation: "Spiders have 8 legs! This makes them different from insects, which have 6 legs."
+                    question: "The process of conversion of water vapour into liquid is called:",
+                    options: ["Evaporation", "Condensation", "Sublimation"],
+                    answer: 1
                 },
                 {
-                    id: "sci_q3",
-                    text: "What happens to water when it gets very cold?",
-                    options: ["It disappears", "It becomes ice", "It becomes hot"],
-                    correctAnswer: 1,
-                    explanation: "When water gets very cold (below 0°C), it freezes and becomes ice!"
+                    question: "Which vitamin is obtained from sunlight?",
+                    options: ["Vitamin A", "Vitamin D", "Vitamin C"],
+                    answer: 1
                 },
                 {
-                    id: "sci_q4",
-                    text: "Which animal is known as the king of the jungle?",
-                    options: ["Tiger", "Lion", "Elephant"],
-                    correctAnswer: 1,
-                    explanation: "The lion is called the king of the jungle because of its strength and courage!"
+                    question: "The metal that is liquid at room temperature is:",
+                    options: ["Mercury", "Copper", "Iron"],
+                    answer: 0
                 },
                 {
-                    id: "sci_q5",
-                    text: "What do we call baby cats?",
-                    options: ["Puppies", "Kittens", "Cubs"],
-                    correctAnswer: 1,
-                    explanation: "Baby cats are called kittens! They are born blind and depend on their mother."
+                    question: "The green pigment in plants is:",
+                    options: ["Carotene", "Chlorophyll", "Haemoglobin"],
+                    answer: 1
                 },
                 {
-                    id: "sci_q6",
-                    text: "Which planet do we live on?",
-                    options: ["Mars", "Earth", "Jupiter"],
-                    correctAnswer: 1,
-                    explanation: "We live on Earth! It's the third planet from the Sun and the only one with life as we know it."
+                    question: "Which is a renewable source of energy?",
+                    options: ["Coal", "Petroleum", "Wind"],
+                    answer: 2
                 },
                 {
-                    id: "sci_q7",
-                    text: "What gas do we breathe in to stay alive?",
-                    options: ["Carbon dioxide", "Oxygen", "Nitrogen"],
-                    correctAnswer: 1,
-                    explanation: "We breathe in oxygen to stay alive. Plants help make oxygen for us to breathe!"
+                    question: "Which organ purifies blood in the human body?",
+                    options: ["Liver", "Kidney", "Heart"],
+                    answer: 1
                 },
                 {
-                    id: "sci_q8",
-                    text: "What is the hottest season of the year?",
-                    options: ["Winter", "Summer", "Spring"],
-                    correctAnswer: 1,
-                    explanation: "Summer is the hottest season when the Sun shines the most on our part of Earth!"
+                    question: "The Earth’s outermost layer is called:",
+                    options: ["Mantle", "Core", "Crust"],
+                    answer: 2
                 },
                 {
-                    id: "sci_q9",
-                    text: "Which part of the plant makes food?",
-                    options: ["Roots", "Flowers", "Leaves"],
-                    correctAnswer: 2,
-                    explanation: "Leaves make food for the plant using sunlight, water, and air. This process is called photosynthesis!"
+                    question: "Which part of the cell controls its activities?",
+                    options: ["Nucleus", "Cytoplasm", "Membrane"],
+                    answer: 0
                 },
                 {
-                    id: "sci_q10",
-                    text: "What sound does thunder make?",
-                    options: ["Boom", "Whistle", "Ring"],
-                    correctAnswer: 0,
-                    explanation: "Thunder makes a loud 'boom' sound! It happens when lightning heats the air very quickly."
+                    question: "Which of these is a conductor of electricity?",
+                    options: ["Plastic", "Copper", "Rubber"],
+                    answer: 1
                 }
             ]
         }
@@ -166,78 +242,116 @@ const mockQuizzes = {
         beginner: {
             id: "english-basic",
             subject: "English",
-            level: "beginner",
+            level: "class6",
+            pointsPerQuestion: 10,
+                questions: [
+                    {
+                        question: "Choose the correct plural: Child",
+                        options: ["Childs", "Children", "Childes"],
+                        answer: 1
+                    },
+                    {
+                        question: "Fill in the blank: The sun ___ in the east.",
+                        options: ["rise", "rises", "rose"],
+                        answer: 1
+                    },
+                    {
+                        question: "Which is a noun?",
+                        options: ["Run", "Apple", "Quickly"],
+                        answer: 1
+                    },
+                    {
+                        question: "Opposite of Hot:",
+                        options: ["Cold", "Warm", "Cool"],
+                        answer: 0
+                    },
+                    {
+                        question: "Choose the correct spelling:",
+                        options: ["Recieve", "Receive", "Receeve"],
+                        answer: 1
+                    },
+                    {
+                        question: "Which is a verb?",
+                        options: ["Run", "Blue", "Table"],
+                        answer: 0
+                    },
+                    {
+                        question: "Fill in the blank: She ___ reading a book.",
+                        options: ["is", "are", "am"],
+                        answer: 0
+                    },
+                    {
+                        question: "Synonym of Happy:",
+                        options: ["Sad", "Joyful", "Angry"],
+                        answer: 1
+                    },
+                    {
+                        question: "Antonym of Big:",
+                        options: ["Large", "Huge", "Small"],
+                        answer: 2
+                    },
+                    {
+                        question: "Which is a pronoun?",
+                        options: ["He", "Run", "Apple"],
+                        answer: 0
+                    }
+                ]
+        },
+        class7: {
+            id: "english-class7",
+            subject: "English",
+            level: "class7",
             pointsPerQuestion: 10,
             questions: [
                 {
-                    id: "eng_q1",
-                    text: "Which word rhymes with 'cat'?",
-                    options: ["Dog", "Hat", "Bird"],
-                    correctAnswer: 1,
-                    explanation: "Hat rhymes with cat! Both words end with the 'at' sound."
+                    question: "Choose the correctly spelled word:",
+                    options: ["Accomodation", "Accommodation", "Acommodation"],
+                    answer: 1
                 },
                 {
-                    id: "eng_q2",
-                    text: "What is the plural of 'book'?",
-                    options: ["Books", "Book", "Bookes"],
-                    correctAnswer: 0,
-                    explanation: "Books is the plural of book. We add 's' to most words to make them plural."
+                    question: "Opposite of Victory:",
+                    options: ["Success", "Defeat", "Win"],
+                    answer: 1
                 },
                 {
-                    id: "eng_q3",
-                    text: "Which letter comes after 'M' in the alphabet?",
-                    options: ["L", "N", "O"],
-                    correctAnswer: 1,
-                    explanation: "N comes after M in the alphabet! The order is: L, M, N, O, P..."
+                    question: "Choose the adverb: He runs quickly.",
+                    options: ["He", "Runs", "Quickly"],
+                    answer: 2
                 },
                 {
-                    id: "eng_q4",
-                    text: "What is the opposite of 'big'?",
-                    options: ["Large", "Huge", "Small"],
-                    correctAnswer: 2,
-                    explanation: "Small is the opposite of big. These are called opposite words or antonyms!"
+                    question: "Fill in the blank: They ___ playing football.",
+                    options: ["is", "are", "am"],
+                    answer: 1
                 },
                 {
-                    id: "eng_q5",
-                    text: "Which word is a color?",
-                    options: ["Happy", "Blue", "Fast"],
-                    correctAnswer: 1,
-                    explanation: "Blue is a color! Colors help us describe how things look."
+                    question: "Which is a conjunction?",
+                    options: ["And", "Apple", "Running"],
+                    answer: 0
                 },
                 {
-                    id: "eng_q6",
-                    text: "What do we call a person who teaches?",
-                    options: ["Teacher", "Doctor", "Chef"],
-                    correctAnswer: 0,
-                    explanation: "A teacher is a person who teaches students in school. Teachers help us learn!"
+                    question: "Synonym of Brave:",
+                    options: ["Courageous", "Weak", "Afraid"],
+                    answer: 0
                 },
                 {
-                    id: "eng_q7",
-                    text: "Which word means the same as 'happy'?",
-                    options: ["Sad", "Joyful", "Angry"],
-                    correctAnswer: 1,
-                    explanation: "Joyful means the same as happy! Words with the same meaning are called synonyms."
+                    question: "Antonym of Generous:",
+                    options: ["Kind", "Selfish", "Noble"],
+                    answer: 1
                 },
                 {
-                    id: "eng_q8",
-                    text: "How many vowels are there in English?",
-                    options: ["4", "6", "5"],
-                    correctAnswer: 2,
-                    explanation: "There are 5 vowels in English: A, E, I, O, U. Sometimes Y can be a vowel too!"
+                    question: "Identify the verb: The bird flew away.",
+                    options: ["Bird", "Flew", "Away"],
+                    answer: 1
                 },
                 {
-                    id: "eng_q9",
-                    text: "What do we call words that sound the same but mean different things?",
-                    options: ["Rhymes", "Homophones", "Synonyms"],
-                    correctAnswer: 1,
-                    explanation: "Homophones are words that sound the same but mean different things, like 'to', 'too', and 'two'!"
+                    question: "Plural of Mouse is:",
+                    options: ["Mouses", "Mice", "Mousees"],
+                    answer: 1
                 },
                 {
-                    id: "eng_q10",
-                    text: "Which punctuation mark ends a question?",
-                    options: ["Question mark (?)", "Period (.)", "Exclamation mark (!)"],
-                    correctAnswer: 0,
-                    explanation: "A question mark (?) ends a question. It shows that someone is asking something!"
+                    question: "Which type of sentence is this? Close the door.",
+                    options: ["Interrogative", "Imperative", "Declarative"],
+                    answer: 1
                 }
             ]
         }
@@ -246,78 +360,116 @@ const mockQuizzes = {
         beginner: {
             id: "general-basic",
             subject: "General Knowledge",
-            level: "beginner",
+            level: "class6",
+            pointsPerQuestion: 10,
+                questions: [
+                    {
+                        question: "Which is the capital of India?",
+                        options: ["Mumbai", "Delhi", "Kolkata"],
+                        answer: 1
+                    },
+                    {
+                        question: "Who is the Prime Minister of India (2024)?",
+                        options: ["Narendra Modi", "Rahul Gandhi", "Amit Shah"],
+                        answer: 0
+                    },
+                    {
+                        question: "Which is the largest continent?",
+                        options: ["Africa", "Asia", "Europe"],
+                        answer: 1
+                    },
+                    {
+                        question: "The national bird of India is:",
+                        options: ["Sparrow", "Peacock", "Crow"],
+                        answer: 1
+                    },
+                    {
+                        question: "Which festival is known as the Festival of Colors?",
+                        options: ["Diwali", "Holi", "Eid"],
+                        answer: 1
+                    },
+                    {
+                        question: "Which is the longest river in India?",
+                        options: ["Ganga", "Yamuna", "Godavari"],
+                        answer: 0
+                    },
+                    {
+                        question: "Who wrote the national anthem of India?",
+                        options: ["Rabindranath Tagore", "Bankim Chandra Chatterjee", "Sarojini Naidu"],
+                        answer: 0
+                    },
+                    {
+                        question: "Which is the smallest state in India?",
+                        options: ["Goa", "Sikkim", "Tripura"],
+                        answer: 0
+                    },
+                    {
+                        question: "The Taj Mahal is located in:",
+                        options: ["Delhi", "Agra", "Mumbai"],
+                        answer: 1
+                    },
+                    {
+                        question: "Which planet is closest to the Sun?",
+                        options: ["Venus", "Mercury", "Earth"],
+                        answer: 1
+                    }
+                ]
+        },
+        class7: {
+            id: "general-class7",
+            subject: "General Knowledge",
+            level: "class7",
             pointsPerQuestion: 10,
             questions: [
                 {
-                    id: "gen_q1",
-                    text: "What is the capital of India?",
-                    options: ["Mumbai", "New Delhi", "Kolkata"],
-                    correctAnswer: 1,
-                    explanation: "New Delhi is the capital of India. It's where the government makes important decisions for our country!"
+                    question: "Who is known as the Missile Man of India?",
+                    options: ["Homi Bhabha", "A. P. J. Abdul Kalam", "Vikram Sarabhai"],
+                    answer: 1
                 },
                 {
-                    id: "gen_q2",
-                    text: "How many days are there in a week?",
-                    options: ["7", "6", "8"],
-                    correctAnswer: 0,
-                    explanation: "There are 7 days in a week: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday!"
+                    question: "The largest desert in the world is:",
+                    options: ["Sahara", "Thar", "Gobi"],
+                    answer: 0
                 },
                 {
-                    id: "gen_q3",
-                    text: "What is the largest animal in the world?",
-                    options: ["Elephant", "Blue whale", "Giraffe"],
-                    correctAnswer: 1,
-                    explanation: "The blue whale is the largest animal in the world! It lives in the ocean and can be as long as three school buses!"
+                    question: "The currency of the USA is:",
+                    options: ["Pound", "Dollar", "Euro"],
+                    answer: 1
                 },
                 {
-                    id: "gen_q4",
-                    text: "Which festival is known as the festival of lights?",
-                    options: ["Holi", "Diwali", "Eid"],
-                    correctAnswer: 1,
-                    explanation: "Diwali is called the festival of lights because people light diyas and candles to celebrate!"
+                    question: "The Red Fort is in:",
+                    options: ["Delhi", "Agra", "Jaipur"],
+                    answer: 0
                 },
                 {
-                    id: "gen_q5",
-                    text: "What do we use to brush our teeth?",
-                    options: ["Comb", "Spoon", "Toothbrush"],
-                    correctAnswer: 2,
-                    explanation: "We use a toothbrush to brush our teeth! It helps keep our teeth clean and healthy."
+                    question: "Which gas do plants release during photosynthesis?",
+                    options: ["Oxygen", "Carbon dioxide", "Nitrogen"],
+                    answer: 0
                 },
                 {
-                    id: "gen_q6",
-                    text: "Which bird cannot fly?",
-                    options: ["Eagle", "Penguin", "Sparrow"],
-                    correctAnswer: 1,
-                    explanation: "Penguins cannot fly! But they are excellent swimmers and live in cold places."
+                    question: "Which is the national animal of India?",
+                    options: ["Elephant", "Lion", "Tiger"],
+                    answer: 2
                 },
                 {
-                    id: "gen_q7",
-                    text: "What do bees make?",
-                    options: ["Milk", "Honey", "Cheese"],
-                    correctAnswer: 1,
-                    explanation: "Bees make honey! They collect nectar from flowers and turn it into sweet, golden honey."
+                    question: "The highest mountain peak in the world is:",
+                    options: ["Mount Everest", "Kanchenjunga", "K2"],
+                    answer: 0
                 },
                 {
-                    id: "gen_q8",
-                    text: "Which instrument is used to measure time?",
-                    options: ["Clock", "Thermometer", "Scale"],
-                    correctAnswer: 0,
-                    explanation: "A clock is used to measure time! It tells us what time it is during the day."
+                    question: "The first man to step on the Moon was:",
+                    options: ["Neil Armstrong", "Yuri Gagarin", "Rakesh Sharma"],
+                    answer: 0
                 },
                 {
-                    id: "gen_q9",
-                    text: "What is the main source of light during the day?",
-                    options: ["Moon", "Sun", "Stars"],
-                    correctAnswer: 1,
-                    explanation: "The Sun is our main source of light during the day! It also gives us heat and energy."
+                    question: "Which Indian festival is also called the Festival of Lights?",
+                    options: ["Diwali", "Holi", "Eid"],
+                    answer: 0
                 },
                 {
-                    id: "gen_q10",
-                    text: "How many colors are there in a rainbow?",
-                    options: ["5", "7", "9"],
-                    correctAnswer: 1,
-                    explanation: "There are 7 colors in a rainbow: Red, Orange, Yellow, Green, Blue, Indigo, Violet! Remember: ROYGBIV!"
+                    question: "The national game of India is:",
+                    options: ["Cricket", "Hockey", "Kabaddi"],
+                    answer: 1
                 }
             ]
         }
@@ -415,24 +567,6 @@ const mockBadges = [
         criteria: { type: "points", value: 500 },
         rarity: "rare",
         points: 200
-    },
-    {
-        id: "quiz-master",
-        name: "Quiz Master",
-        description: "Complete 10 quizzes",
-        icon: "🎓",
-        criteria: { type: "quizzes", value: 10 },
-        rarity: "rare",
-        points: 300
-    },
-    {
-        id: "all-rounder",
-        name: "All Rounder",
-        description: "Complete at least one quiz in each subject",
-        icon: "🌈",
-        criteria: { type: "diversity", value: 4 }, // 4 subjects
-        rarity: "legendary",
-        points: 500
     },
     {
         id: "legendary-learner",
